@@ -1,27 +1,51 @@
 .container{
     display: flex;
-    height: 400px;
-    width: 600px;
-    background-color: blue;
+    height: 800px;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
     border: none;
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
 }
 
-.items{
-    height: 200px;
-    width: 200px;
-    background-color: green;
-    border: 2px solid white;
+#items{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(26, 0, 128);
+    border: 5px solid white;
+    padding-left: 2px;
     text-align: center;
-    color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    
 }
 
 *{
     background-color: #111;
+}
+
+#items{
+    background: linear-gradient(to left, #05d1ff, #7e42a7, #9c32ff, #6070fd, #2a46ff, #0099ff );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite;
+}
+
+@keyframes animate-gradient {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
 }
