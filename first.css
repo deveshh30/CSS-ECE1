@@ -1,16 +1,27 @@
-.first{
-    color: red;
-    font-size: 60px;
+.container{
+    display: flex;
+    height: 400px;
+    width: 600px;
+    background-color: blue;
+    border: none;
+    flex-direction: row-reverse;
 }
-.second{
-    color: rgb(101, 0, 0);
-    font-size: 60px;
+
+.items{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-.third{
-    color: green;
-    font-size: 60px;
-}
-.four{
-    color: blue;
-    font-size: 60px;
+
+*{
+    background-color: #111;
 }
